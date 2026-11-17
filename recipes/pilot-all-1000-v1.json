@@ -1,0 +1,40 @@
+{
+  "schema_version": 2,
+  "recipe_id": "sdv-all-1000-v1",
+  "snapshot": {
+    "path": "reference/nccr-public/2026-11-09/manifest.json",
+    "sha256": "0732be5498b1b731acd860e879eda5637dc4ad720908f294cd9ec49fd63b9607"
+  },
+  "rules": {
+    "path": "reference/generation-rules/v1.2.0-pilot.1/rules.json",
+    "sha256": "89ede4905ca9d93ffe494b4ea7565911dd2548d5834e575501a5001864e4beee"
+  },
+  "contract": {
+    "path": "reference/generation-contracts/v1.0.0-all-source-pilot.1/contract.json",
+    "sha256": "556d3c15842229b4b16faa7670bc33ec1cd415883a894c0550b457fba183f862"
+  },
+  "profiles": {
+    "field-policies": {
+      "path": "experiments/gen-sdv/profiles/v2.0.0/field-policies.json",
+      "sha256": "0f288246dd927a547088391cf498edfe7337da776b89e0dfacdc4f31ef7efcad"
+    },
+    "model": {
+      "path": "experiments/gen-sdv/profiles/v2.0.0/model.json",
+      "sha256": "25ecf99f7ddf39c0d39970fd4fd1b2ab53f0609ea2029d51041560d2b4592bca"
+    }
+  },
+  "sources": [
+    "CTC",
+    "ABM",
+    "COG",
+    "MCE",
+    "MCD",
+    "MCP",
+    "PHARM",
+    "RO",
+    "CCDI"
+  ],
+  "patients": 1000,
+  "seed": 20261110,
+  "chunk_size": 257
+}

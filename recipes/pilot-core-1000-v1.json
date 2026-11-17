@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "recipe_id": "pilot-core-1000-v1",
+  "snapshot": {
+    "path": "reference/nccr-public/2026-11-09/manifest.json",
+    "sha256": "0732be5498b1b731acd860e879eda5637dc4ad720908f294cd9ec49fd63b9607"
+  },
+  "rules": {
+    "path": "reference/generation-rules/v1.1.0/rules.json",
+    "sha256": "8384c8db482457b202daa08eb098b2615d590d88a3678203c0533c8ce3306057"
+  },
+  "contract": {
+    "path": "reference/generation-contracts/v1.0.0-core-pilot.1/contract.json",
+    "sha256": "4ae2aeaba3265c479c28791b62d908db6a9ecf9442d7683fdcc82f87a66a1eb3"
+  },
+  "profiles": {
+    "field-policies": {
+      "path": "experiments/gen-sdv/profiles/v1.0.0/field-policies.json",
+      "sha256": "eabe5fa245c78ccd0d49deb396cce62eb1ea6c38c6f29b63ee4e550641abcbeb"
+    },
+    "dependence": {
+      "path": "experiments/gen-sdv/profiles/v1.0.0/dependence.json",
+      "sha256": "d6e4a872f5fdb189d086b7b713ce3bcb8838c706c890e444e50955f6e1d4a0c7"
+    },
+    "core-counts": {
+      "path": "experiments/gen-sdv/profiles/v1.0.0/core-counts.json",
+      "sha256": "c9d483c99ebb29000e98a4a2867e9a1ec6c20362ebd98ce59346769d7b8a4be1"
+    }
+  },
+  "sources": [
+    "CTC",
+    "ABM",
+    "COG"
+  ],
+  "patients": 1000,
+  "seed": 20261110,
+  "chunk_size": 137
+}

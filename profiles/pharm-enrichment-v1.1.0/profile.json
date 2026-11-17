@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "version": "1.1.0",
+  "profile_id": "gen-sdv-pharm-enrichment-v1.1.0",
+  "policy": "published_category_then_conditional_name_then_uniform_package",
+  "allocation": "largest_remainder_lexical_tie_break",
+  "temporal_policy": "identity_only_preserve_patient_timeline",
+  "unresolved": "public_rxnorm_missing_rate_with_synthetic_UNK_NDC",
+  "rng": "python_random_choice_then_shuffle",
+  "seed_stream": "PHARM.tuples.v1",
+  "rxnorm_manifest": {
+    "path": "reference/generation-rules/lookups/rxnorm/2026-11-12/manifest.json",
+    "sha256": "0f0f4768390daa205fe05ab921d4d45bccdd8d8e27ae824d38a35ff70fc90af2"
+  },
+  "rxnorm": {
+    "path": "reference/generation-rules/lookups/rxnorm/2026-11-12/rxnorm-ndc.json",
+    "sha256": "6dce43f2b2e341cd962dd9ba1411b639e0560f9e6518ecd33b5f113e7f43e7d5"
+  },
+  "frequency_family_alpha": 0.001
+}

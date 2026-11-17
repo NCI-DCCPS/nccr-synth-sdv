@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "kind": "ctc_conditional_replacement",
+  "recipe_id": "jamboree_sdv_rules_v4_0_0_scale_10pct_r4",
+  "seed": 20261113,
+  "baseline": {
+    "path": "releases/jamboree_sdv_rules_v2_3_0_scale_10pct_r3.json",
+    "sha256": "0eb961e2662f104c49d3057e0bbe17ed38526e12f2ec9e8bdea775883cc85d7c"
+  },
+  "rules": {
+    "path": "reference/generation-rules/v4.0.0/rules.json",
+    "sha256": "99bf56784aa293026f64570e4e80ff307b775dafc51518bf26e0a1b72793eaf2"
+  },
+  "profile": {
+    "path": "experiments/gen-sdv/profiles/conditional-joints-v1.0.0/profile.json",
+    "sha256": "65dcc76250ee92e78cf797bd2e3a08b9c42af980aeb970ee9dfaf4c9f87f6fc2"
+  },
+  "snapshot": {
+    "path": "reference/nccr-derived/2026-11-13-stage-test-v30-g1-v1/manifest.json",
+    "sha256": "64e432745465b40c620b3816dbefb256b73f3c30bcf8f05840ab31a77fb68dda"
+  },
+  "expected": {
+    "patients": 148392,
+    "rows": 161469
+  }
+}

@@ -1,0 +1,1388 @@
+{
+  "schema_version": 1,
+  "version": "1.0.0",
+  "fields": [
+    {
+      "source": "CTC",
+      "field": "nccrId",
+      "semantic_id": "field:CTC.nccrId",
+      "grain": "patient",
+      "mode": "identity"
+    },
+    {
+      "source": "CTC",
+      "field": "naaccrRecordVersion",
+      "semantic_id": "field:CTC.naaccrRecordVersion",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "tumorRecordNumber",
+      "semantic_id": "field:CTC.tumorRecordNumber",
+      "grain": "tumor",
+      "mode": "tumor_number"
+    },
+    {
+      "source": "CTC",
+      "field": "sex",
+      "semantic_id": "field:CTC.sex",
+      "grain": "patient",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "ageRecode19Groups",
+      "semantic_id": "field:CTC.ageRecode19Groups",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "ageRecode20Groups",
+      "semantic_id": "field:CTC.ageRecode20Groups",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "ageRecodeSingle85p",
+      "semantic_id": "field:CTC.ageRecodeSingle85p",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "ageRecodeSingle90p",
+      "semantic_id": "field:CTC.ageRecodeSingle90p",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "raceAndOriginRecode",
+      "semantic_id": "field:CTC.raceAndOriginRecode",
+      "grain": "patient",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "yearOfDiagnosis",
+      "semantic_id": "field:CTC.yearOfDiagnosis",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "imputedMonthOfDiagnosis",
+      "semantic_id": "field:CTC.imputedMonthOfDiagnosis",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "diagnosticConfirmation",
+      "semantic_id": "field:CTC.diagnosticConfirmation",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "icccMajor",
+      "semantic_id": "field:CTC.icccMajor",
+      "grain": "tumor",
+      "mode": "hierarchy_parent_or_sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "iccc2017Recode",
+      "semantic_id": "field:CTC.iccc2017Recode",
+      "grain": "tumor",
+      "mode": "hierarchy_parent_or_sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "iccc2017ExtendedRecode",
+      "semantic_id": "field:CTC.iccc2017ExtendedRecode",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "nccrSiteMorphRecodeLevel1",
+      "semantic_id": "field:CTC.nccrSiteMorphRecodeLevel1",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "nccrSiteMorphRecodeLevel2",
+      "semantic_id": "field:CTC.nccrSiteMorphRecodeLevel2",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "nccrSiteMorphRecodeLevel3",
+      "semantic_id": "field:CTC.nccrSiteMorphRecodeLevel3",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "nccrSiteMorphRecodeLevel4",
+      "semantic_id": "field:CTC.nccrSiteMorphRecodeLevel4",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "nccrSiteMorphRecodeLevel5",
+      "semantic_id": "field:CTC.nccrSiteMorphRecodeLevel5",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "primarySite",
+      "semantic_id": "field:CTC.primarySite",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "behaviorICDO3Public",
+      "semantic_id": "field:CTC.behaviorICDO3Public",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "histologicTypeIcdO3",
+      "semantic_id": "field:CTC.histologicTypeIcdO3",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "histologyBehaviorRecodePublic",
+      "semantic_id": "field:CTC.histologyBehaviorRecodePublic",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "laterality",
+      "semantic_id": "field:CTC.laterality",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "sequenceNumberCentral",
+      "semantic_id": "field:CTC.sequenceNumberCentral",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "typeOfReportingSource",
+      "semantic_id": "field:CTC.typeOfReportingSource",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "indexCancer",
+      "semantic_id": "field:CTC.indexCancer",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "tumorOrder",
+      "semantic_id": "field:CTC.tumorOrder",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "numberOfPrimaries",
+      "semantic_id": "field:CTC.numberOfPrimaries",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "monthsFromIndexDxToTumor",
+      "semantic_id": "field:CTC.monthsFromIndexDxToTumor",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "range_policy": {
+        "within_bin": "uniform_integer",
+        "open_upper_bound": 999,
+        "reason": "Dictionary 0-999 bound; within-bin shape is a generator assumption"
+      },
+      "label_codes": {
+        "Not Available Due to Imputed Month of Diagnosis": "6666",
+        "Missing": "9999"
+      }
+    },
+    {
+      "source": "CTC",
+      "field": "brainMolecularMarkers",
+      "semantic_id": "field:CTC.brainMolecularMarkers",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "breslowDepthRecode",
+      "semantic_id": "field:CTC.breslowDepthRecode",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "combinedSsPubDetailed",
+      "semantic_id": "field:CTC.combinedSsPubDetailed",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "csExtension",
+      "semantic_id": "field:CTC.csExtension",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "csLymphNodes",
+      "semantic_id": "field:CTC.csLymphNodes",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "csLymphNodesEval",
+      "semantic_id": "field:CTC.csLymphNodesEval",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "csMetsAtDx",
+      "semantic_id": "field:CTC.csMetsAtDx",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "csMetsEval",
+      "semantic_id": "field:CTC.csMetsEval",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "csTumorSizeExtEval",
+      "semantic_id": "field:CTC.csTumorSizeExtEval",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "derivedAjcc7M",
+      "semantic_id": "field:CTC.derivedAjcc7M",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "derivedAjcc7MDescript",
+      "semantic_id": "field:CTC.derivedAjcc7MDescript",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "derivedAjcc7N",
+      "semantic_id": "field:CTC.derivedAjcc7N",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "derivedAjcc7NDescript",
+      "semantic_id": "field:CTC.derivedAjcc7NDescript",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "derivedAjcc7StageGrp",
+      "semantic_id": "field:CTC.derivedAjcc7StageGrp",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "derivedAjcc7T",
+      "semantic_id": "field:CTC.derivedAjcc7T",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "derivedAjcc7TDescript",
+      "semantic_id": "field:CTC.derivedAjcc7TDescript",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "her2Recode",
+      "semantic_id": "field:CTC.her2Recode",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "erRecode",
+      "semantic_id": "field:CTC.erRecode",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "esophagusAndEgjTumorEpicenter",
+      "semantic_id": "field:CTC.esophagusAndEgjTumorEpicenter",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "eodPrimaryTumor",
+      "semantic_id": "field:CTC.eodPrimaryTumor",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "eodRegionalNodes",
+      "semantic_id": "field:CTC.eodRegionalNodes",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "eodMets",
+      "semantic_id": "field:CTC.eodMets",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "gleasonPatternClinicalRecode",
+      "semantic_id": "field:CTC.gleasonPatternClinicalRecode",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "gleasonPatternPathologicRecode",
+      "semantic_id": "field:CTC.gleasonPatternPathologicRecode",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "gleasonScoreClinicalRecode",
+      "semantic_id": "field:CTC.gleasonScoreClinicalRecode",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "gleasonScorePathologicRecode",
+      "semantic_id": "field:CTC.gleasonScorePathologicRecode",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "gleasonTertiaryPattern",
+      "semantic_id": "field:CTC.gleasonTertiaryPattern",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "gradeClinical",
+      "semantic_id": "field:CTC.gradeClinical",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "gradePathological",
+      "semantic_id": "field:CTC.gradePathological",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "gradePostTherapyClin",
+      "semantic_id": "field:CTC.gradePostTherapyClin",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "gradePostTherapy",
+      "semantic_id": "field:CTC.gradePostTherapy",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "gradeRecodePre2018",
+      "semantic_id": "field:CTC.gradeRecodePre2018",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "ldhPretreatmentLabValue",
+      "semantic_id": "field:CTC.ldhPretreatmentLabValue",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "lymphVasInvasionPublic",
+      "semantic_id": "field:CTC.lymphVasInvasionPublic",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "microsatelliteInstability",
+      "semantic_id": "field:CTC.microsatelliteInstability",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "p16Recode",
+      "semantic_id": "field:CTC.p16Recode",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "prRecode",
+      "semantic_id": "field:CTC.prRecode",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "psaLabValueRecode",
+      "semantic_id": "field:CTC.psaLabValueRecode",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "regionalNodesExamined",
+      "semantic_id": "field:CTC.regionalNodesExamined",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "regionalNodesPositive",
+      "semantic_id": "field:CTC.regionalNodesPositive",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "schemaDiscriminator1",
+      "semantic_id": "field:CTC.schemaDiscriminator1",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "schemaDiscriminator2",
+      "semantic_id": "field:CTC.schemaDiscriminator2",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "schemaId",
+      "semantic_id": "field:CTC.schemaId",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "tumorSizeOverTime",
+      "semantic_id": "field:CTC.tumorSizeOverTime",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "rxSummChemoRecode",
+      "semantic_id": "field:CTC.rxSummChemoRecode",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "monthsFromDxToBrm",
+      "semantic_id": "field:CTC.monthsFromDxToBrm",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "range_policy": {
+        "within_bin": "uniform_integer",
+        "open_upper_bound": 999,
+        "reason": "Dictionary 0-999 bound; within-bin shape is a generator assumption"
+      },
+      "label_codes": {
+        "Not Available Due to Imputed Month of Diagnosis": "6666",
+        "Missing": "9999"
+      }
+    },
+    {
+      "source": "CTC",
+      "field": "monthsFromDxToChemo",
+      "semantic_id": "field:CTC.monthsFromDxToChemo",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "range_policy": {
+        "within_bin": "uniform_integer",
+        "open_upper_bound": 999,
+        "reason": "Dictionary 0-999 bound; within-bin shape is a generator assumption"
+      },
+      "label_codes": {
+        "Not Available Due to Imputed Month of Diagnosis": "6666",
+        "Missing": "9999"
+      }
+    },
+    {
+      "source": "CTC",
+      "field": "monthsFromDxToHormone",
+      "semantic_id": "field:CTC.monthsFromDxToHormone",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "range_policy": {
+        "within_bin": "uniform_integer",
+        "open_upper_bound": 999,
+        "reason": "Dictionary 0-999 bound; within-bin shape is a generator assumption"
+      },
+      "label_codes": {
+        "Not Available Due to Imputed Month of Diagnosis": "6666",
+        "Missing": "9999"
+      }
+    },
+    {
+      "source": "CTC",
+      "field": "monthsFromDxToMostDefinSurg",
+      "semantic_id": "field:CTC.monthsFromDxToMostDefinSurg",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "range_policy": {
+        "within_bin": "uniform_integer",
+        "open_upper_bound": 999,
+        "reason": "Dictionary 0-999 bound; within-bin shape is a generator assumption"
+      },
+      "label_codes": {
+        "Not Available Due to Imputed Month of Diagnosis": "6666",
+        "Missing": "9999"
+      }
+    },
+    {
+      "source": "CTC",
+      "field": "monthsFromDxToRadiation",
+      "semantic_id": "field:CTC.monthsFromDxToRadiation",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "range_policy": {
+        "within_bin": "uniform_integer",
+        "open_upper_bound": 999,
+        "reason": "Dictionary 0-999 bound; within-bin shape is a generator assumption"
+      },
+      "label_codes": {
+        "Not Available Due to Imputed Month of Diagnosis": "6666",
+        "Missing": "9999"
+      }
+    },
+    {
+      "source": "CTC",
+      "field": "monthsFromDxToSurgery",
+      "semantic_id": "field:CTC.monthsFromDxToSurgery",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "range_policy": {
+        "within_bin": "uniform_integer",
+        "open_upper_bound": 999,
+        "reason": "Dictionary 0-999 bound; within-bin shape is a generator assumption"
+      },
+      "label_codes": {
+        "Not Available Due to Imputed Month of Diagnosis": "6666",
+        "Missing": "9999"
+      }
+    },
+    {
+      "source": "CTC",
+      "field": "monthsFromDxToOtherTx",
+      "semantic_id": "field:CTC.monthsFromDxToOtherTx",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "range_policy": {
+        "within_bin": "uniform_integer",
+        "open_upper_bound": 999,
+        "reason": "Dictionary 0-999 bound; within-bin shape is a generator assumption"
+      },
+      "label_codes": {
+        "Not Available Due to Imputed Month of Diagnosis": "6666",
+        "Missing": "9999"
+      }
+    },
+    {
+      "source": "CTC",
+      "field": "radiationRecode",
+      "semantic_id": "field:CTC.radiationRecode",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "reasonForNoRadiation",
+      "semantic_id": "field:CTC.reasonForNoRadiation",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "rxSummBrm",
+      "semantic_id": "field:CTC.rxSummBrm",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "rxSummHormone",
+      "semantic_id": "field:CTC.rxSummHormone",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "rxSummOther",
+      "semantic_id": "field:CTC.rxSummOther",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "scope2003pPublic",
+      "semantic_id": "field:CTC.scope2003pPublic",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "rxSummSurgOthRegDis",
+      "semantic_id": "field:CTC.rxSummSurgOthRegDis",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "rxSummSurgPrimSite",
+      "semantic_id": "field:CTC.rxSummSurgPrimSite",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "rxSummSurgPrimSite2023",
+      "semantic_id": "field:CTC.rxSummSurgPrimSite2023",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "reasonForNoSurgery",
+      "semantic_id": "field:CTC.reasonForNoSurgery",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "rxSummSurgRadSeq",
+      "semantic_id": "field:CTC.rxSummSurgRadSeq",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "rxSummSystemicSurSeq",
+      "semantic_id": "field:CTC.rxSummSystemicSurSeq",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "rxSummTransplntEndocr",
+      "semantic_id": "field:CTC.rxSummTransplntEndocr",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "treatmentStatusPublic",
+      "semantic_id": "field:CTC.treatmentStatusPublic",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "scope9802Public",
+      "semantic_id": "field:CTC.scope9802Public",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "daysToRxRecode",
+      "semantic_id": "field:CTC.daysToRxRecode",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "recordNumberRecode",
+      "semantic_id": "field:CTC.recordNumberRecode",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "seerCauseSpecificCod",
+      "semantic_id": "field:CTC.seerCauseSpecificCod",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "seerOtherCod",
+      "semantic_id": "field:CTC.seerOtherCod",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "survFlagActiveFollowup",
+      "semantic_id": "field:CTC.survFlagActiveFollowup",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "survFlagPresumedAlive",
+      "semantic_id": "field:CTC.survFlagPresumedAlive",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "survMosActiveFollowup",
+      "semantic_id": "field:CTC.survMosActiveFollowup",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "survMosPresumedAlive",
+      "semantic_id": "field:CTC.survMosPresumedAlive",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "vitalStatusRecode",
+      "semantic_id": "field:CTC.vitalStatusRecode",
+      "grain": "patient",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "pathReportsFlag",
+      "semantic_id": "field:CTC.pathReportsFlag",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "cocAccreditedFlag",
+      "semantic_id": "field:CTC.cocAccreditedFlag",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "numFacSubmittedAbstract",
+      "semantic_id": "field:CTC.numFacSubmittedAbstract",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "referenceId1",
+      "semantic_id": "field:CTC.referenceId1",
+      "grain": "tumor",
+      "mode": "blank",
+      "reason": "Explicit common contract permission; no observed missingness estimate"
+    },
+    {
+      "source": "CTC",
+      "field": "referenceId2",
+      "semantic_id": "field:CTC.referenceId2",
+      "grain": "tumor",
+      "mode": "blank",
+      "reason": "Explicit common contract permission; no observed missingness estimate"
+    },
+    {
+      "source": "CTC",
+      "field": "referenceId3",
+      "semantic_id": "field:CTC.referenceId3",
+      "grain": "tumor",
+      "mode": "blank",
+      "reason": "Explicit common contract permission; no observed missingness estimate"
+    },
+    {
+      "source": "CTC",
+      "field": "referenceId4",
+      "semantic_id": "field:CTC.referenceId4",
+      "grain": "tumor",
+      "mode": "blank",
+      "reason": "Explicit common contract permission; no observed missingness estimate"
+    },
+    {
+      "source": "ABM",
+      "field": "nccrId",
+      "semantic_id": "field:ABM.nccrId",
+      "grain": "tumor",
+      "mode": "identity"
+    },
+    {
+      "source": "ABM",
+      "field": "tumorRecordNumber",
+      "semantic_id": "field:ABM.tumorRecordNumber",
+      "grain": "tumor",
+      "mode": "tumor_number"
+    },
+    {
+      "source": "ABM",
+      "field": "yostUSBasedQuintile",
+      "semantic_id": "field:ABM.yostUSBasedQuintile",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "ABM",
+      "field": "rucaC",
+      "semantic_id": "field:ABM.rucaC",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "ABM",
+      "field": "uricA",
+      "semantic_id": "field:ABM.uricA",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "ABM",
+      "field": "persistentPoverty",
+      "semantic_id": "field:ABM.persistentPoverty",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "COG",
+      "field": "nccrId",
+      "semantic_id": "field:COG.nccrId",
+      "grain": "patient",
+      "mode": "identity"
+    },
+    {
+      "source": "COG",
+      "field": "reportedCOGEnrollment",
+      "semantic_id": "field:COG.reportedCOGEnrollment",
+      "grain": "patient",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "COG",
+      "field": "biobankingTumorClassStudyCount",
+      "semantic_id": "field:COG.biobankingTumorClassStudyCount",
+      "grain": "patient",
+      "mode": "conditional_count",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "condition": {
+        "field": "reportedCOGEnrollment",
+        "equals": "1"
+      },
+      "excluded_codes": [
+        "7777"
+      ],
+      "otherwise": "7777"
+    },
+    {
+      "source": "COG",
+      "field": "registryStudyCount",
+      "semantic_id": "field:COG.registryStudyCount",
+      "grain": "patient",
+      "mode": "conditional_count",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "condition": {
+        "field": "reportedCOGEnrollment",
+        "equals": "1"
+      },
+      "excluded_codes": [
+        "7777"
+      ],
+      "otherwise": "7777"
+    },
+    {
+      "source": "COG",
+      "field": "supportiveStudyCount",
+      "semantic_id": "field:COG.supportiveStudyCount",
+      "grain": "patient",
+      "mode": "conditional_count",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "condition": {
+        "field": "reportedCOGEnrollment",
+        "equals": "1"
+      },
+      "excluded_codes": [
+        "7777"
+      ],
+      "otherwise": "7777"
+    },
+    {
+      "source": "COG",
+      "field": "therapeuticOtherTrialCount",
+      "semantic_id": "field:COG.therapeuticOtherTrialCount",
+      "grain": "patient",
+      "mode": "conditional_count",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "condition": {
+        "field": "reportedCOGEnrollment",
+        "equals": "1"
+      },
+      "excluded_codes": [
+        "7777"
+      ],
+      "otherwise": "7777"
+    },
+    {
+      "source": "COG",
+      "field": "therapeuticFrontLineTrialCount",
+      "semantic_id": "field:COG.therapeuticFrontLineTrialCount",
+      "grain": "patient",
+      "mode": "conditional_count",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "condition": {
+        "field": "reportedCOGEnrollment",
+        "equals": "1"
+      },
+      "excluded_codes": [
+        "7777"
+      ],
+      "otherwise": "7777"
+    },
+    {
+      "source": "COG",
+      "field": "therapeuticRelapsedTrialCount",
+      "semantic_id": "field:COG.therapeuticRelapsedTrialCount",
+      "grain": "patient",
+      "mode": "conditional_count",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "condition": {
+        "field": "reportedCOGEnrollment",
+        "equals": "1"
+      },
+      "excluded_codes": [
+        "7777"
+      ],
+      "otherwise": "7777"
+    }
+  ],
+  "assumptions": [
+    "Public marginals normalized on reported support; unexplained deficits are not missingness rates.",
+    "Tumor-weighted sex/race/vital marginals used as patient-level sampling targets, then propagated; this is a synthetic modeling assumption.",
+    "Temporal, histology/site, and five-level morphology associations are not enforced by this scoped pilot."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "version": "1.0.0",
+  "rounding": "ROUND_HALF_UP",
+  "tumor_allocation": "one_per_patient_plus_uniform_without_replacement",
+  "maximum_tumors_per_patient": 2,
+  "id_prefix": "SDV",
+  "id_digits": 10,
+  "iccc_policy": "reported_extended_support_derive_parents",
+  "missing_iccc_leaf_frequency": "exclude_from_sampling_report_unknown",
+  "enrollment_count_policy": "independent_bernoulli_from_public_rate",
+  "field_order": "frozen_dictionary"
+}

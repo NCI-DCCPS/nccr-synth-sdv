@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "version": "1.0.0",
+  "allocation": "floor_or_ceiling_exact_patient_and_tumor_totals",
+  "rounding_objective": "minimum_absolute_patient_count_error",
+  "patient_assignment": "seeded_uniform_permutation",
+  "source_population": "all_tumor_rows_in_frozen_stage_test_reference",
+  "clinical_representativeness": "unverified",
+  "manifest": {
+    "path": "reference/nccr-derived/2026-11-13-stage-test-v30-iccc-age-race-v1/manifest.json",
+    "sha256": "775ca904314fa8ff37c3563a3d944c6e78fb30d53eb03b1b404e2471bc78619a"
+  },
+  "histogram": {
+    "path": "reference/nccr-derived/2026-11-13-stage-test-v30-iccc-age-race-v1/analysis/quality.json",
+    "sha256": "6364ac462ebc944e886bc79a40738e770f0f31e2daf14617532f7a77068ed176"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "profile_id": "gen-sdv-catalog-linkage-v1.0.0",
+  "selection": "condition_public_counts_on_catalog",
+  "unreported_counts": "report_unknown_then_condition_on_reported_supported_counts",
+  "stream": "CCDI.resourceName.catalog_v1",
+  "sampler_identifier_policy": "globally_unique_synthetic_participant_ids",
+  "frequency_check": {
+    "method": "simultaneous_hoeffding",
+    "family_alpha": 0.001
+  }
+}

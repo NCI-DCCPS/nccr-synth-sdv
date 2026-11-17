@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "profile_id": "ctc-conditional-joints-v1",
+  "version": "1.0.0",
+  "context_policy": "preserve_all_existing_context_bindings_and_sidecars",
+  "blocks": [
+    {
+      "id": "g1_index",
+      "select": {
+        "column": "indexCancer",
+        "values": [
+          "1",
+          "2"
+        ]
+      },
+      "broadcast": {
+        "key": "nccrId",
+        "fields": [
+          "sex",
+          "raceAndOriginRecode"
+        ]
+      },
+      "rules": [
+        {
+          "id": "g1_index_tuple",
+          "type": "conditional_joint_table",
+          "type_version": 1,
+          "given": [
+            "ageRecodeSingle90p"
+          ],
+          "outputs": [
+            "sex",
+            "raceAndOriginRecode",
+            "iccc2017ExtendedRecode"
+          ],
+          "table": {
+            "path": "reference/nccr-derived/2026-11-13-stage-test-v30-g1-v1/through2022_all.csv",
+            "sha256": "e9bd860a51a4b7dc0775225c4312e91f6f16fe5f47993f879622afd266c68344"
+          },
+          "count_column": "count",
+          "backoff": []
+        }
+      ]
+    },
+    {
+      "id": "g1_nonindex",
+      "select": {
+        "column": "indexCancer",
+        "values": [
+          "0"
+        ]
+      },
+      "broadcast": null,
+      "rules": [
+        {
+          "id": "g1_nonindex_leaf",
+          "type": "conditional_joint_table",
+          "type_version": 1,
+          "given": [
+            "ageRecodeSingle90p",
+            "sex",
+            "raceAndOriginRecode"
+          ],
+          "outputs": [
+            "iccc2017ExtendedRecode"
+          ],
+          "table": {
+            "path": "reference/nccr-derived/2026-11-13-stage-test-v30-g1-v1/through2022_all.csv",
+            "sha256": "e9bd860a51a4b7dc0775225c4312e91f6f16fe5f47993f879622afd266c68344"
+          },
+          "count_column": "count",
+          "backoff": [
+            [
+              "sex",
+              "raceAndOriginRecode"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "p16_all",
+      "select": null,
+      "broadcast": null,
+      "rules": [
+        {
+          "id": "schema_p16_tuple",
+          "type": "conditional_joint_table",
+          "type_version": 1,
+          "given": [
+            "yearOfDiagnosis"
+          ],
+          "outputs": [
+            "schemaId",
+            "p16Recode"
+          ],
+          "table": {
+            "path": "reference/nccr-derived/2026-11-13-stage-test-v30-g1-v1/through2022_schema_p16.csv",
+            "sha256": "bbc645c15cb9d06e30a390dbc633c005378773a3639884409c2a7c0a1d9dcef4"
+          },
+          "count_column": "count",
+          "backoff": []
+        }
+      ]
+    }
+  ],
+  "rule_bindings": {
+    "ctc_g1_conditional_joint": [
+      "g1_index",
+      "g1_nonindex"
+    ],
+    "ctc_p16_applicability": [
+      "p16_all"
+    ]
+  },
+  "frequency_check": {
+    "method": "independent_conditional_multinomial",
+    "family_alpha": 0.001
+  },
+  "reference_scope": "1995 through 2022 all tumor rows; p16 table excludes invalid or unresolved applicability only",
+  "hierarchy_rule_id": "ctc_iccc_2017_hierarchy_is_consistent",
+  "source_limitations": [
+    "Counts describe the supplied STAGE_TEST_ONLY file; authenticity and clinical validity are unverified.",
+    "Age and all birth, diagnosis and follow-up context remain the baseline values. Unrestricted source G1 fidelity is not claimed.",
+    "Demographics are drawn once per patient at index age and reused for later tumors; later tumor demographic margins need not match the reference.",
+    "Only unseen non-index age/sex/race strata drop age, retaining sex/race. This approximation and its affected mass are independently reported.",
+    "Schema and p16 are drawn jointly given year from strict-passing support; schema consistency with site, histology, sex and ICCC is not established.",
+    "Other source payloads are unchanged; new clinical associations with retained claims and treatments are not established.",
+    "The current CTC-only path protects all context-bound fields. Changing timing/outcomes requires coordinated context and dependent-source generation."
+  ]
+}

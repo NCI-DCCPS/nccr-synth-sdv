@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "version": "1.0.0",
+  "mode": "independent",
+  "blocks": [],
+  "reason": "No observed joint data or public cross-column correlation estimates supplied."
+}

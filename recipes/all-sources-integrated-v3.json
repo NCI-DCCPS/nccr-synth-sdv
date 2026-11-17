@@ -1,0 +1,58 @@
+{
+  "schema_version": 4,
+  "recipe_id": "sdv-all-rules-v2_3_0-multiplicity-v1",
+  "snapshot": {
+    "path": "reference/nccr-public/2026-11-09/manifest.json",
+    "sha256": "0732be5498b1b731acd860e879eda5637dc4ad720908f294cd9ec49fd63b9607"
+  },
+  "rules": {
+    "path": "reference/generation-rules/v2.3.0/rules.json",
+    "sha256": "1ef2a47229785b209d5e1514d548739816879233a57728811e81211e2e64c3ed"
+  },
+  "contract": {
+    "path": "reference/generation-contracts/v1.2.0-all-source-scaled.1/contract.json",
+    "sha256": "cfc60086db4b2fdf18e7656db6afbedf2219985b6e0f42d9b8e71520f70d0dac"
+  },
+  "profiles": {
+    "field-policies": {
+      "path": "experiments/gen-sdv/profiles/v3.0.0/field-policies.json",
+      "sha256": "fc8c4afe4ace9d1c97ef58dccbb580053a8b49f234f91e97836d4ee84634446c"
+    },
+    "model": {
+      "path": "experiments/gen-sdv/profiles/v3.1.0/model.json",
+      "sha256": "1056eac96ab222e0f1ecc8dd1570693ebd793d604a08bc252c4db34900e2c21a"
+    },
+    "catalog-linkage": {
+      "path": "experiments/gen-sdv/profiles/catalog-linkage-v1.0.0/profile.json",
+      "sha256": "e99ecfb1e9ceb13fae3370740c2a66f5d69205ea7df92956a57ab0a8cddbfec0"
+    },
+    "pharm-enrichment": {
+      "path": "experiments/gen-sdv/profiles/pharm-enrichment-v1.1.0/profile.json",
+      "sha256": "739a05f9c3d33a7d9eeff3f7a67d42b7f20308b453ee107b38589d75dabccf75"
+    },
+    "tumor-multiplicity": {
+      "path": "experiments/gen-sdv/profiles/tumor-multiplicity-v1.0.0/profile.json",
+      "sha256": "d77b824593a810b6d082768efdbbc8e67deb94413217fbab306da6877cd6d020"
+    }
+  },
+  "sources": [
+    "CTC",
+    "ABM",
+    "COG",
+    "MCE",
+    "MCD",
+    "MCP",
+    "PHARM",
+    "RO",
+    "CCDI"
+  ],
+  "patients": 1000,
+  "seed": 20261110,
+  "chunk_size": 257,
+  "size": {
+    "kind": "patients",
+    "value": 1000
+  },
+  "prerequisites": [],
+  "template": null
+}

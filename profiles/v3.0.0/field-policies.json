@@ -1,0 +1,5609 @@
+{
+  "schema_version": 1,
+  "version": "3.0.0",
+  "fields": [
+    {
+      "source": "CTC",
+      "field": "nccrId",
+      "semantic_id": "field:CTC.nccrId",
+      "grain": "patient",
+      "mode": "identity"
+    },
+    {
+      "source": "CTC",
+      "field": "naaccrRecordVersion",
+      "semantic_id": "field:CTC.naaccrRecordVersion",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "tumorRecordNumber",
+      "semantic_id": "field:CTC.tumorRecordNumber",
+      "grain": "tumor",
+      "mode": "tumor_number"
+    },
+    {
+      "source": "CTC",
+      "field": "sex",
+      "semantic_id": "field:CTC.sex",
+      "grain": "patient",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "ageRecode19Groups",
+      "semantic_id": "field:CTC.ageRecode19Groups",
+      "grain": "tumor",
+      "mode": "context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "ageRecode20Groups",
+      "semantic_id": "field:CTC.ageRecode20Groups",
+      "grain": "tumor",
+      "mode": "context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "ageRecodeSingle85p",
+      "semantic_id": "field:CTC.ageRecodeSingle85p",
+      "grain": "tumor",
+      "mode": "context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "ageRecodeSingle90p",
+      "semantic_id": "field:CTC.ageRecodeSingle90p",
+      "grain": "tumor",
+      "mode": "context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "raceAndOriginRecode",
+      "semantic_id": "field:CTC.raceAndOriginRecode",
+      "grain": "patient",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "yearOfDiagnosis",
+      "semantic_id": "field:CTC.yearOfDiagnosis",
+      "grain": "tumor",
+      "mode": "context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "imputedMonthOfDiagnosis",
+      "semantic_id": "field:CTC.imputedMonthOfDiagnosis",
+      "grain": "tumor",
+      "mode": "context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "diagnosticConfirmation",
+      "semantic_id": "field:CTC.diagnosticConfirmation",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "icccMajor",
+      "semantic_id": "field:CTC.icccMajor",
+      "grain": "tumor",
+      "mode": "hierarchy_parent_or_sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "iccc2017Recode",
+      "semantic_id": "field:CTC.iccc2017Recode",
+      "grain": "tumor",
+      "mode": "hierarchy_parent_or_sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "iccc2017ExtendedRecode",
+      "semantic_id": "field:CTC.iccc2017ExtendedRecode",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "nccrSiteMorphRecodeLevel1",
+      "semantic_id": "field:CTC.nccrSiteMorphRecodeLevel1",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "nccrSiteMorphRecodeLevel2",
+      "semantic_id": "field:CTC.nccrSiteMorphRecodeLevel2",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "nccrSiteMorphRecodeLevel3",
+      "semantic_id": "field:CTC.nccrSiteMorphRecodeLevel3",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "nccrSiteMorphRecodeLevel4",
+      "semantic_id": "field:CTC.nccrSiteMorphRecodeLevel4",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "nccrSiteMorphRecodeLevel5",
+      "semantic_id": "field:CTC.nccrSiteMorphRecodeLevel5",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "primarySite",
+      "semantic_id": "field:CTC.primarySite",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "behaviorICDO3Public",
+      "semantic_id": "field:CTC.behaviorICDO3Public",
+      "grain": "tumor",
+      "mode": "context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "histologicTypeIcdO3",
+      "semantic_id": "field:CTC.histologicTypeIcdO3",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "histologyBehaviorRecodePublic",
+      "semantic_id": "field:CTC.histologyBehaviorRecodePublic",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "laterality",
+      "semantic_id": "field:CTC.laterality",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "sequenceNumberCentral",
+      "semantic_id": "field:CTC.sequenceNumberCentral",
+      "grain": "tumor",
+      "mode": "context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "typeOfReportingSource",
+      "semantic_id": "field:CTC.typeOfReportingSource",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "indexCancer",
+      "semantic_id": "field:CTC.indexCancer",
+      "grain": "tumor",
+      "mode": "context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "tumorOrder",
+      "semantic_id": "field:CTC.tumorOrder",
+      "grain": "tumor",
+      "mode": "context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "numberOfPrimaries",
+      "semantic_id": "field:CTC.numberOfPrimaries",
+      "grain": "tumor",
+      "mode": "context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "monthsFromIndexDxToTumor",
+      "semantic_id": "field:CTC.monthsFromIndexDxToTumor",
+      "grain": "tumor",
+      "mode": "context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "range_policy": {
+        "within_bin": "uniform_integer",
+        "open_upper_bound": 999,
+        "reason": "Dictionary 0-999 bound; within-bin shape is a generator assumption"
+      },
+      "label_codes": {
+        "Not Available Due to Imputed Month of Diagnosis": "6666",
+        "Missing": "9999"
+      }
+    },
+    {
+      "source": "CTC",
+      "field": "brainMolecularMarkers",
+      "semantic_id": "field:CTC.brainMolecularMarkers",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "breslowDepthRecode",
+      "semantic_id": "field:CTC.breslowDepthRecode",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "combinedSsPubDetailed",
+      "semantic_id": "field:CTC.combinedSsPubDetailed",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "csExtension",
+      "semantic_id": "field:CTC.csExtension",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "csLymphNodes",
+      "semantic_id": "field:CTC.csLymphNodes",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "csLymphNodesEval",
+      "semantic_id": "field:CTC.csLymphNodesEval",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "csMetsAtDx",
+      "semantic_id": "field:CTC.csMetsAtDx",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "csMetsEval",
+      "semantic_id": "field:CTC.csMetsEval",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "csTumorSizeExtEval",
+      "semantic_id": "field:CTC.csTumorSizeExtEval",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "derivedAjcc7M",
+      "semantic_id": "field:CTC.derivedAjcc7M",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "derivedAjcc7MDescript",
+      "semantic_id": "field:CTC.derivedAjcc7MDescript",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "derivedAjcc7N",
+      "semantic_id": "field:CTC.derivedAjcc7N",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "derivedAjcc7NDescript",
+      "semantic_id": "field:CTC.derivedAjcc7NDescript",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "derivedAjcc7StageGrp",
+      "semantic_id": "field:CTC.derivedAjcc7StageGrp",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "derivedAjcc7T",
+      "semantic_id": "field:CTC.derivedAjcc7T",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "derivedAjcc7TDescript",
+      "semantic_id": "field:CTC.derivedAjcc7TDescript",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "her2Recode",
+      "semantic_id": "field:CTC.her2Recode",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "erRecode",
+      "semantic_id": "field:CTC.erRecode",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "esophagusAndEgjTumorEpicenter",
+      "semantic_id": "field:CTC.esophagusAndEgjTumorEpicenter",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "eodPrimaryTumor",
+      "semantic_id": "field:CTC.eodPrimaryTumor",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "eodRegionalNodes",
+      "semantic_id": "field:CTC.eodRegionalNodes",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "eodMets",
+      "semantic_id": "field:CTC.eodMets",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "gleasonPatternClinicalRecode",
+      "semantic_id": "field:CTC.gleasonPatternClinicalRecode",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "gleasonPatternPathologicRecode",
+      "semantic_id": "field:CTC.gleasonPatternPathologicRecode",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "gleasonScoreClinicalRecode",
+      "semantic_id": "field:CTC.gleasonScoreClinicalRecode",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "gleasonScorePathologicRecode",
+      "semantic_id": "field:CTC.gleasonScorePathologicRecode",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "gleasonTertiaryPattern",
+      "semantic_id": "field:CTC.gleasonTertiaryPattern",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "gradeClinical",
+      "semantic_id": "field:CTC.gradeClinical",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "gradePathological",
+      "semantic_id": "field:CTC.gradePathological",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "gradePostTherapyClin",
+      "semantic_id": "field:CTC.gradePostTherapyClin",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "gradePostTherapy",
+      "semantic_id": "field:CTC.gradePostTherapy",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "gradeRecodePre2018",
+      "semantic_id": "field:CTC.gradeRecodePre2018",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "ldhPretreatmentLabValue",
+      "semantic_id": "field:CTC.ldhPretreatmentLabValue",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "lymphVasInvasionPublic",
+      "semantic_id": "field:CTC.lymphVasInvasionPublic",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "microsatelliteInstability",
+      "semantic_id": "field:CTC.microsatelliteInstability",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "p16Recode",
+      "semantic_id": "field:CTC.p16Recode",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "prRecode",
+      "semantic_id": "field:CTC.prRecode",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "psaLabValueRecode",
+      "semantic_id": "field:CTC.psaLabValueRecode",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "regionalNodesExamined",
+      "semantic_id": "field:CTC.regionalNodesExamined",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "regionalNodesPositive",
+      "semantic_id": "field:CTC.regionalNodesPositive",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "schemaDiscriminator1",
+      "semantic_id": "field:CTC.schemaDiscriminator1",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "schemaDiscriminator2",
+      "semantic_id": "field:CTC.schemaDiscriminator2",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "schemaId",
+      "semantic_id": "field:CTC.schemaId",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "tumorSizeOverTime",
+      "semantic_id": "field:CTC.tumorSizeOverTime",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "rxSummChemoRecode",
+      "semantic_id": "field:CTC.rxSummChemoRecode",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "monthsFromDxToBrm",
+      "semantic_id": "field:CTC.monthsFromDxToBrm",
+      "grain": "tumor",
+      "mode": "context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "range_policy": {
+        "within_bin": "uniform_integer",
+        "open_upper_bound": 999,
+        "reason": "Dictionary 0-999 bound; within-bin shape is a generator assumption"
+      },
+      "label_codes": {
+        "Not Available Due to Imputed Month of Diagnosis": "6666",
+        "Missing": "9999"
+      }
+    },
+    {
+      "source": "CTC",
+      "field": "monthsFromDxToChemo",
+      "semantic_id": "field:CTC.monthsFromDxToChemo",
+      "grain": "tumor",
+      "mode": "context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "range_policy": {
+        "within_bin": "uniform_integer",
+        "open_upper_bound": 999,
+        "reason": "Dictionary 0-999 bound; within-bin shape is a generator assumption"
+      },
+      "label_codes": {
+        "Not Available Due to Imputed Month of Diagnosis": "6666",
+        "Missing": "9999"
+      }
+    },
+    {
+      "source": "CTC",
+      "field": "monthsFromDxToHormone",
+      "semantic_id": "field:CTC.monthsFromDxToHormone",
+      "grain": "tumor",
+      "mode": "context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "range_policy": {
+        "within_bin": "uniform_integer",
+        "open_upper_bound": 999,
+        "reason": "Dictionary 0-999 bound; within-bin shape is a generator assumption"
+      },
+      "label_codes": {
+        "Not Available Due to Imputed Month of Diagnosis": "6666",
+        "Missing": "9999"
+      }
+    },
+    {
+      "source": "CTC",
+      "field": "monthsFromDxToMostDefinSurg",
+      "semantic_id": "field:CTC.monthsFromDxToMostDefinSurg",
+      "grain": "tumor",
+      "mode": "context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "range_policy": {
+        "within_bin": "uniform_integer",
+        "open_upper_bound": 999,
+        "reason": "Dictionary 0-999 bound; within-bin shape is a generator assumption"
+      },
+      "label_codes": {
+        "Not Available Due to Imputed Month of Diagnosis": "6666",
+        "Missing": "9999"
+      }
+    },
+    {
+      "source": "CTC",
+      "field": "monthsFromDxToRadiation",
+      "semantic_id": "field:CTC.monthsFromDxToRadiation",
+      "grain": "tumor",
+      "mode": "context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "range_policy": {
+        "within_bin": "uniform_integer",
+        "open_upper_bound": 999,
+        "reason": "Dictionary 0-999 bound; within-bin shape is a generator assumption"
+      },
+      "label_codes": {
+        "Not Available Due to Imputed Month of Diagnosis": "6666",
+        "Missing": "9999"
+      }
+    },
+    {
+      "source": "CTC",
+      "field": "monthsFromDxToSurgery",
+      "semantic_id": "field:CTC.monthsFromDxToSurgery",
+      "grain": "tumor",
+      "mode": "context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "range_policy": {
+        "within_bin": "uniform_integer",
+        "open_upper_bound": 999,
+        "reason": "Dictionary 0-999 bound; within-bin shape is a generator assumption"
+      },
+      "label_codes": {
+        "Not Available Due to Imputed Month of Diagnosis": "6666",
+        "Missing": "9999"
+      }
+    },
+    {
+      "source": "CTC",
+      "field": "monthsFromDxToOtherTx",
+      "semantic_id": "field:CTC.monthsFromDxToOtherTx",
+      "grain": "tumor",
+      "mode": "context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "range_policy": {
+        "within_bin": "uniform_integer",
+        "open_upper_bound": 999,
+        "reason": "Dictionary 0-999 bound; within-bin shape is a generator assumption"
+      },
+      "label_codes": {
+        "Not Available Due to Imputed Month of Diagnosis": "6666",
+        "Missing": "9999"
+      }
+    },
+    {
+      "source": "CTC",
+      "field": "radiationRecode",
+      "semantic_id": "field:CTC.radiationRecode",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "reasonForNoRadiation",
+      "semantic_id": "field:CTC.reasonForNoRadiation",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "rxSummBrm",
+      "semantic_id": "field:CTC.rxSummBrm",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "rxSummHormone",
+      "semantic_id": "field:CTC.rxSummHormone",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "rxSummOther",
+      "semantic_id": "field:CTC.rxSummOther",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "scope2003pPublic",
+      "semantic_id": "field:CTC.scope2003pPublic",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "rxSummSurgOthRegDis",
+      "semantic_id": "field:CTC.rxSummSurgOthRegDis",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "rxSummSurgPrimSite",
+      "semantic_id": "field:CTC.rxSummSurgPrimSite",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "rxSummSurgPrimSite2023",
+      "semantic_id": "field:CTC.rxSummSurgPrimSite2023",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "reasonForNoSurgery",
+      "semantic_id": "field:CTC.reasonForNoSurgery",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "rxSummSurgRadSeq",
+      "semantic_id": "field:CTC.rxSummSurgRadSeq",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "rxSummSystemicSurSeq",
+      "semantic_id": "field:CTC.rxSummSystemicSurSeq",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "rxSummTransplntEndocr",
+      "semantic_id": "field:CTC.rxSummTransplntEndocr",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "treatmentStatusPublic",
+      "semantic_id": "field:CTC.treatmentStatusPublic",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "scope9802Public",
+      "semantic_id": "field:CTC.scope9802Public",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "daysToRxRecode",
+      "semantic_id": "field:CTC.daysToRxRecode",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "recordNumberRecode",
+      "semantic_id": "field:CTC.recordNumberRecode",
+      "grain": "tumor",
+      "mode": "context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "seerCauseSpecificCod",
+      "semantic_id": "field:CTC.seerCauseSpecificCod",
+      "grain": "tumor",
+      "mode": "context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "seerOtherCod",
+      "semantic_id": "field:CTC.seerOtherCod",
+      "grain": "tumor",
+      "mode": "context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "survFlagActiveFollowup",
+      "semantic_id": "field:CTC.survFlagActiveFollowup",
+      "grain": "tumor",
+      "mode": "context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "survFlagPresumedAlive",
+      "semantic_id": "field:CTC.survFlagPresumedAlive",
+      "grain": "tumor",
+      "mode": "context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "survMosActiveFollowup",
+      "semantic_id": "field:CTC.survMosActiveFollowup",
+      "grain": "tumor",
+      "mode": "context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "survMosPresumedAlive",
+      "semantic_id": "field:CTC.survMosPresumedAlive",
+      "grain": "tumor",
+      "mode": "context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "vitalStatusRecode",
+      "semantic_id": "field:CTC.vitalStatusRecode",
+      "grain": "patient",
+      "mode": "context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "pathReportsFlag",
+      "semantic_id": "field:CTC.pathReportsFlag",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "cocAccreditedFlag",
+      "semantic_id": "field:CTC.cocAccreditedFlag",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "numFacSubmittedAbstract",
+      "semantic_id": "field:CTC.numFacSubmittedAbstract",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CTC",
+      "field": "referenceId1",
+      "semantic_id": "field:CTC.referenceId1",
+      "grain": "tumor",
+      "mode": "blank",
+      "reason": "Explicit common contract permission; no observed missingness estimate"
+    },
+    {
+      "source": "CTC",
+      "field": "referenceId2",
+      "semantic_id": "field:CTC.referenceId2",
+      "grain": "tumor",
+      "mode": "blank",
+      "reason": "Explicit common contract permission; no observed missingness estimate"
+    },
+    {
+      "source": "CTC",
+      "field": "referenceId3",
+      "semantic_id": "field:CTC.referenceId3",
+      "grain": "tumor",
+      "mode": "blank",
+      "reason": "Explicit common contract permission; no observed missingness estimate"
+    },
+    {
+      "source": "CTC",
+      "field": "referenceId4",
+      "semantic_id": "field:CTC.referenceId4",
+      "grain": "tumor",
+      "mode": "blank",
+      "reason": "Explicit common contract permission; no observed missingness estimate"
+    },
+    {
+      "source": "ABM",
+      "field": "nccrId",
+      "semantic_id": "field:ABM.nccrId",
+      "grain": "tumor",
+      "mode": "identity"
+    },
+    {
+      "source": "ABM",
+      "field": "tumorRecordNumber",
+      "semantic_id": "field:ABM.tumorRecordNumber",
+      "grain": "tumor",
+      "mode": "tumor_number"
+    },
+    {
+      "source": "ABM",
+      "field": "yostUSBasedQuintile",
+      "semantic_id": "field:ABM.yostUSBasedQuintile",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "ABM",
+      "field": "rucaC",
+      "semantic_id": "field:ABM.rucaC",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "ABM",
+      "field": "uricA",
+      "semantic_id": "field:ABM.uricA",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "ABM",
+      "field": "persistentPoverty",
+      "semantic_id": "field:ABM.persistentPoverty",
+      "grain": "tumor",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "COG",
+      "field": "nccrId",
+      "semantic_id": "field:COG.nccrId",
+      "grain": "patient",
+      "mode": "identity"
+    },
+    {
+      "source": "COG",
+      "field": "reportedCOGEnrollment",
+      "semantic_id": "field:COG.reportedCOGEnrollment",
+      "grain": "patient",
+      "mode": "enrollment",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "COG",
+      "field": "biobankingTumorClassStudyCount",
+      "semantic_id": "field:COG.biobankingTumorClassStudyCount",
+      "grain": "patient",
+      "mode": "conditional_count",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "condition": {
+        "field": "reportedCOGEnrollment",
+        "equals": "1"
+      },
+      "excluded_codes": [
+        "7777"
+      ],
+      "otherwise": "7777"
+    },
+    {
+      "source": "COG",
+      "field": "registryStudyCount",
+      "semantic_id": "field:COG.registryStudyCount",
+      "grain": "patient",
+      "mode": "conditional_count",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "condition": {
+        "field": "reportedCOGEnrollment",
+        "equals": "1"
+      },
+      "excluded_codes": [
+        "7777"
+      ],
+      "otherwise": "7777"
+    },
+    {
+      "source": "COG",
+      "field": "supportiveStudyCount",
+      "semantic_id": "field:COG.supportiveStudyCount",
+      "grain": "patient",
+      "mode": "conditional_count",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "condition": {
+        "field": "reportedCOGEnrollment",
+        "equals": "1"
+      },
+      "excluded_codes": [
+        "7777"
+      ],
+      "otherwise": "7777"
+    },
+    {
+      "source": "COG",
+      "field": "therapeuticOtherTrialCount",
+      "semantic_id": "field:COG.therapeuticOtherTrialCount",
+      "grain": "patient",
+      "mode": "conditional_count",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "condition": {
+        "field": "reportedCOGEnrollment",
+        "equals": "1"
+      },
+      "excluded_codes": [
+        "7777"
+      ],
+      "otherwise": "7777"
+    },
+    {
+      "source": "COG",
+      "field": "therapeuticFrontLineTrialCount",
+      "semantic_id": "field:COG.therapeuticFrontLineTrialCount",
+      "grain": "patient",
+      "mode": "conditional_count",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "condition": {
+        "field": "reportedCOGEnrollment",
+        "equals": "1"
+      },
+      "excluded_codes": [
+        "7777"
+      ],
+      "otherwise": "7777"
+    },
+    {
+      "source": "COG",
+      "field": "therapeuticRelapsedTrialCount",
+      "semantic_id": "field:COG.therapeuticRelapsedTrialCount",
+      "grain": "patient",
+      "mode": "conditional_count",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "condition": {
+        "field": "reportedCOGEnrollment",
+        "equals": "1"
+      },
+      "excluded_codes": [
+        "7777"
+      ],
+      "otherwise": "7777"
+    },
+    {
+      "source": "MCE",
+      "field": "nccrId",
+      "semantic_id": "field:MCE.nccrId",
+      "grain": "patient",
+      "mode": "identity",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "reportedInsuranceEnrollment",
+      "semantic_id": "field:MCE.reportedInsuranceEnrollment",
+      "grain": "patient",
+      "mode": "enrollment",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollIndexDxMonth",
+      "semantic_id": "field:MCE.enrollIndexDxMonth",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPriorIndexDx1",
+      "semantic_id": "field:MCE.enrollMonthPriorIndexDx1",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPriorIndexDx2",
+      "semantic_id": "field:MCE.enrollMonthPriorIndexDx2",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPriorIndexDx3",
+      "semantic_id": "field:MCE.enrollMonthPriorIndexDx3",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPriorIndexDx4",
+      "semantic_id": "field:MCE.enrollMonthPriorIndexDx4",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPriorIndexDx5",
+      "semantic_id": "field:MCE.enrollMonthPriorIndexDx5",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPriorIndexDx6",
+      "semantic_id": "field:MCE.enrollMonthPriorIndexDx6",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPriorIndexDx7",
+      "semantic_id": "field:MCE.enrollMonthPriorIndexDx7",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPriorIndexDx8",
+      "semantic_id": "field:MCE.enrollMonthPriorIndexDx8",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPriorIndexDx9",
+      "semantic_id": "field:MCE.enrollMonthPriorIndexDx9",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPriorIndexDx10",
+      "semantic_id": "field:MCE.enrollMonthPriorIndexDx10",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPriorIndexDx11",
+      "semantic_id": "field:MCE.enrollMonthPriorIndexDx11",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPriorIndexDx12",
+      "semantic_id": "field:MCE.enrollMonthPriorIndexDx12",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx1",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx1",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx2",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx2",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx3",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx3",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx4",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx4",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx5",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx5",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx6",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx6",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx7",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx7",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx8",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx8",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx9",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx9",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx10",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx10",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx11",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx11",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx12",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx12",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx13",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx13",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx14",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx14",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx15",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx15",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx16",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx16",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx17",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx17",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx18",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx18",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx19",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx19",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx20",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx20",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx21",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx21",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx22",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx22",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx23",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx23",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx24",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx24",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx25",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx25",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx26",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx26",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx27",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx27",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx28",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx28",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx29",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx29",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx30",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx30",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx31",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx31",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx32",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx32",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx33",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx33",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx34",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx34",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx35",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx35",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx36",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx36",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx37",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx37",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx38",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx38",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx39",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx39",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx40",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx40",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx41",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx41",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx42",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx42",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx43",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx43",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx44",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx44",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx45",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx45",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx46",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx46",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx47",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx47",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx48",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx48",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx49",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx49",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx50",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx50",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx51",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx51",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx52",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx52",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx53",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx53",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx54",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx54",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx55",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx55",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx56",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx56",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx57",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx57",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx58",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx58",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx59",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx59",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx60",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx60",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx61",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx61",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx62",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx62",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx63",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx63",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx64",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx64",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx65",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx65",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx66",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx66",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx67",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx67",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx68",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx68",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx69",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx69",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx70",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx70",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx71",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx71",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx72",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx72",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx73",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx73",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx74",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx74",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx75",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx75",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx76",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx76",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx77",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx77",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx78",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx78",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx79",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx79",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx80",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx80",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx81",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx81",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx82",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx82",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx83",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx83",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx84",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx84",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx85",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx85",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx86",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx86",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx87",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx87",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx88",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx88",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx89",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx89",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx90",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx90",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx91",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx91",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx92",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx92",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx93",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx93",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx94",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx94",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx95",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx95",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx96",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx96",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx97",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx97",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx98",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx98",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx99",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx99",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx100",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx100",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx101",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx101",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx102",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx102",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx103",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx103",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx104",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx104",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx105",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx105",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx106",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx106",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx107",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx107",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx108",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx108",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx109",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx109",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx110",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx110",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx111",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx111",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx112",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx112",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx113",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx113",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx114",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx114",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx115",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx115",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx116",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx116",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx117",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx117",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx118",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx118",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx119",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx119",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx120",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx120",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx121",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx121",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx122",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx122",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx123",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx123",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx124",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx124",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx125",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx125",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx126",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx126",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx127",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx127",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx128",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx128",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx129",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx129",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx130",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx130",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx131",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx131",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx132",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx132",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx133",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx133",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx134",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx134",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx135",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx135",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx136",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx136",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx137",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx137",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx138",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx138",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx139",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx139",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx140",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx140",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx141",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx141",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx142",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx142",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx143",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx143",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx144",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx144",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx145",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx145",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx146",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx146",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx147",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx147",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx148",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx148",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx149",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx149",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx150",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx150",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx151",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx151",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx152",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx152",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx153",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx153",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx154",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx154",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx155",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx155",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx156",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx156",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx157",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx157",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx158",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx158",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx159",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx159",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx160",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx160",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx161",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx161",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx162",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx162",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx163",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx163",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx164",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx164",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx165",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx165",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx166",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx166",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx167",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx167",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx168",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx168",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx169",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx169",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx170",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx170",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx171",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx171",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx172",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx172",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx173",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx173",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx174",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx174",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx175",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx175",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx176",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx176",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx177",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx177",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx178",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx178",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx179",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx179",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx180",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx180",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx181",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx181",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx182",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx182",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx183",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx183",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx184",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx184",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx185",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx185",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx186",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx186",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx187",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx187",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx188",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx188",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx189",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx189",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx190",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx190",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx191",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx191",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx192",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx192",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx193",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx193",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx194",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx194",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx195",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx195",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx196",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx196",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx197",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx197",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx198",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx198",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx199",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx199",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx200",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx200",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx201",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx201",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx202",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx202",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx203",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx203",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx204",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx204",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx205",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx205",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx206",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx206",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx207",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx207",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx208",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx208",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx209",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx209",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx210",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx210",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx211",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx211",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx212",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx212",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx213",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx213",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx214",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx214",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx215",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx215",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx216",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx216",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx217",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx217",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx218",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx218",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx219",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx219",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx220",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx220",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx221",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx221",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx222",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx222",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx223",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx223",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx224",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx224",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx225",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx225",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx226",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx226",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx227",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx227",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx228",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx228",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx229",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx229",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx230",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx230",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx231",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx231",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx232",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx232",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx233",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx233",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx234",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx234",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx235",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx235",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx236",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx236",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx237",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx237",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx238",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx238",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx239",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx239",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx240",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx240",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx241",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx241",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx242",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx242",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx243",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx243",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx244",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx244",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx245",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx245",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx246",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx246",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx247",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx247",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx248",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx248",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx249",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx249",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx250",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx250",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx251",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx251",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx252",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx252",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx253",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx253",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx254",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx254",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx255",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx255",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx256",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx256",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx257",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx257",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx258",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx258",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx259",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx259",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx260",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx260",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx261",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx261",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx262",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx262",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx263",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx263",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx264",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx264",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx265",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx265",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx266",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx266",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx267",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx267",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx268",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx268",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx269",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx269",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx270",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx270",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx271",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx271",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx272",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx272",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx273",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx273",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx274",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx274",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx275",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx275",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx276",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx276",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx277",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx277",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx278",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx278",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx279",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx279",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx280",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx280",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx281",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx281",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx282",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx282",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx283",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx283",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx284",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx284",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx285",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx285",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx286",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx286",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx287",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx287",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx288",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx288",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx289",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx289",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx290",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx290",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx291",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx291",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx292",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx292",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx293",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx293",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx294",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx294",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx295",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx295",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx296",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx296",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx297",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx297",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx298",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx298",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx299",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx299",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx300",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx300",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx301",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx301",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx302",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx302",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx303",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx303",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx304",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx304",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx305",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx305",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx306",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx306",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx307",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx307",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx308",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx308",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx309",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx309",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx310",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx310",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx311",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx311",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx312",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx312",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx313",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx313",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx314",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx314",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx315",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx315",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx316",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx316",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx317",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx317",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx318",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx318",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx319",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx319",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx320",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx320",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx321",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx321",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx322",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx322",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx323",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx323",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx324",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx324",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx325",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx325",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx326",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx326",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx327",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx327",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx328",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx328",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx329",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx329",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx330",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx330",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx331",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx331",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx332",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx332",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx333",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx333",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx334",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx334",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx335",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx335",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx336",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx336",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx337",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx337",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx338",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx338",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx339",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx339",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx340",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx340",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx341",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx341",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx342",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx342",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx343",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx343",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx344",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx344",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx345",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx345",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx346",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx346",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCE",
+      "field": "enrollMonthPostIndexDx347",
+      "semantic_id": "field:MCE.enrollMonthPostIndexDx347",
+      "grain": "patient",
+      "mode": "mce_context",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCD",
+      "field": "nccrId",
+      "semantic_id": "field:MCD.nccrId",
+      "grain": "event",
+      "mode": "identity",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCD",
+      "field": "claimDiagnosisCode",
+      "semantic_id": "field:MCD.claimDiagnosisCode",
+      "grain": "event",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCD",
+      "field": "claimDiagnosisCodeSequence",
+      "semantic_id": "field:MCD.claimDiagnosisCodeSequence",
+      "grain": "event",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCD",
+      "field": "monthsFromIndexDxToDiagnosisCode",
+      "semantic_id": "field:MCD.monthsFromIndexDxToDiagnosisCode",
+      "grain": "event",
+      "mode": "numeric_bin",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "numeric_policy": {
+        "step": "1",
+        "lower": -999,
+        "upper": 10000,
+        "within_bin": "uniform_over_permitted_grid",
+        "ambiguous_sentinel_mass": "uniform_over_permitted_grid"
+      },
+      "label_codes": {
+        "Missing": "9999"
+      },
+      "temporal": true
+    },
+    {
+      "source": "MCP",
+      "field": "nccrId",
+      "semantic_id": "field:MCP.nccrId",
+      "grain": "event",
+      "mode": "identity",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCP",
+      "field": "claimProcedureCode",
+      "semantic_id": "field:MCP.claimProcedureCode",
+      "grain": "event",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCP",
+      "field": "claimProcedureCodeText",
+      "semantic_id": "field:MCP.claimProcedureCodeText",
+      "grain": "event",
+      "mode": "blank",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "reason": "No verified paired identity lookup or untransformed source text in frozen snapshot."
+    },
+    {
+      "source": "MCP",
+      "field": "claimProcedureCodeSequence",
+      "semantic_id": "field:MCP.claimProcedureCodeSequence",
+      "grain": "event",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCP",
+      "field": "monthsFromIndexDxToProcedureCode",
+      "semantic_id": "field:MCP.monthsFromIndexDxToProcedureCode",
+      "grain": "event",
+      "mode": "numeric_bin",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "numeric_policy": {
+        "step": "1",
+        "lower": -999,
+        "upper": 10000,
+        "within_bin": "uniform_over_permitted_grid",
+        "ambiguous_sentinel_mass": "uniform_over_permitted_grid"
+      },
+      "label_codes": {
+        "Missing": "9999"
+      },
+      "temporal": true
+    },
+    {
+      "source": "MCP",
+      "field": "claimProcedureCodeMod1",
+      "semantic_id": "field:MCP.claimProcedureCodeMod1",
+      "grain": "event",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCP",
+      "field": "claimProcedureCodeMod2",
+      "semantic_id": "field:MCP.claimProcedureCodeMod2",
+      "grain": "event",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCP",
+      "field": "claimProcedureCodeMod3",
+      "semantic_id": "field:MCP.claimProcedureCodeMod3",
+      "grain": "event",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "MCP",
+      "field": "claimProcedureCodeMod4",
+      "semantic_id": "field:MCP.claimProcedureCodeMod4",
+      "grain": "event",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "PHARM",
+      "field": "nccrId",
+      "semantic_id": "field:PHARM.nccrId",
+      "grain": "event",
+      "mode": "identity",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "PHARM",
+      "field": "medicationRequestNdc9",
+      "semantic_id": "field:PHARM.medicationRequestNdc9",
+      "grain": "event",
+      "mode": "drug_tuple",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "reason": "Derived from pinned PHARM tuple profile and shared rules."
+    },
+    {
+      "source": "PHARM",
+      "field": "medicationRequestNdc11",
+      "semantic_id": "field:PHARM.medicationRequestNdc11",
+      "grain": "event",
+      "mode": "drug_tuple",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "reason": "Derived from pinned PHARM tuple profile and shared rules."
+    },
+    {
+      "source": "PHARM",
+      "field": "canmedNonProprietaryName",
+      "semantic_id": "field:PHARM.canmedNonProprietaryName",
+      "grain": "event",
+      "mode": "drug_tuple",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "reason": "Derived from pinned PHARM tuple profile and shared rules."
+    },
+    {
+      "source": "PHARM",
+      "field": "canmedProprietaryName",
+      "semantic_id": "field:PHARM.canmedProprietaryName",
+      "grain": "event",
+      "mode": "drug_tuple",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "reason": "Derived from pinned PHARM tuple profile and shared rules."
+    },
+    {
+      "source": "PHARM",
+      "field": "canmedDrugCategory",
+      "semantic_id": "field:PHARM.canmedDrugCategory",
+      "grain": "event",
+      "mode": "drug_tuple",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "reason": "Derived from pinned PHARM tuple profile and shared rules."
+    },
+    {
+      "source": "PHARM",
+      "field": "canmedMajorDrugClass",
+      "semantic_id": "field:PHARM.canmedMajorDrugClass",
+      "grain": "event",
+      "mode": "drug_tuple",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "reason": "Derived from pinned PHARM tuple profile and shared rules."
+    },
+    {
+      "source": "PHARM",
+      "field": "canmedMinorDrugClass",
+      "semantic_id": "field:PHARM.canmedMinorDrugClass",
+      "grain": "event",
+      "mode": "drug_tuple",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "reason": "Derived from pinned PHARM tuple profile and shared rules."
+    },
+    {
+      "source": "PHARM",
+      "field": "medicationDispenseQuantity",
+      "semantic_id": "field:PHARM.medicationDispenseQuantity",
+      "grain": "event",
+      "mode": "numeric_bin",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "numeric_policy": {
+        "step": "1",
+        "lower": 0,
+        "upper": 999,
+        "within_bin": "uniform_over_permitted_grid",
+        "ambiguous_sentinel_mass": "uniform_over_permitted_grid"
+      },
+      "label_codes": {},
+      "temporal": false
+    },
+    {
+      "source": "PHARM",
+      "field": "medicationDispenseDuration",
+      "semantic_id": "field:PHARM.medicationDispenseDuration",
+      "grain": "event",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "PHARM",
+      "field": "monthsFromIndexDxtoDispense",
+      "semantic_id": "field:PHARM.monthsFromIndexDxtoDispense",
+      "grain": "event",
+      "mode": "numeric_bin",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "numeric_policy": {
+        "step": "1",
+        "lower": -999,
+        "upper": 10000,
+        "within_bin": "uniform_over_permitted_grid",
+        "ambiguous_sentinel_mass": "uniform_over_permitted_grid"
+      },
+      "label_codes": {
+        "Missing": "9999"
+      },
+      "temporal": true
+    },
+    {
+      "source": "PHARM",
+      "field": "rxnormRxcui",
+      "semantic_id": "field:PHARM.rxnormRxcui",
+      "grain": "event",
+      "mode": "drug_tuple",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "reason": "Derived from pinned PHARM tuple profile and shared rules."
+    },
+    {
+      "source": "PHARM",
+      "field": "rxnormConceptName",
+      "semantic_id": "field:PHARM.rxnormConceptName",
+      "grain": "event",
+      "mode": "drug_tuple",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "reason": "Derived from pinned PHARM tuple profile and shared rules."
+    },
+    {
+      "source": "PHARM",
+      "field": "rxnormDisplayName",
+      "semantic_id": "field:PHARM.rxnormDisplayName",
+      "grain": "event",
+      "mode": "drug_tuple",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "reason": "Derived from pinned PHARM tuple profile and shared rules."
+    },
+    {
+      "source": "PHARM",
+      "field": "rxnormStrength",
+      "semantic_id": "field:PHARM.rxnormStrength",
+      "grain": "event",
+      "mode": "drug_tuple",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "reason": "Derived from pinned PHARM tuple profile and shared rules."
+    },
+    {
+      "source": "PHARM",
+      "field": "rxnormDoseForm",
+      "semantic_id": "field:PHARM.rxnormDoseForm",
+      "grain": "event",
+      "mode": "drug_tuple",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "reason": "Derived from pinned PHARM tuple profile and shared rules."
+    },
+    {
+      "source": "PHARM",
+      "field": "rxnormAtcprodClass",
+      "semantic_id": "field:PHARM.rxnormAtcprodClass",
+      "grain": "event",
+      "mode": "drug_tuple",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "reason": "Derived from pinned PHARM tuple profile and shared rules."
+    },
+    {
+      "source": "RO",
+      "field": "nccrId",
+      "semantic_id": "field:RO.nccrId",
+      "grain": "event",
+      "mode": "identity",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "RO",
+      "field": "recordId",
+      "semantic_id": "field:RO.recordId",
+      "grain": "event",
+      "mode": "radiation_id",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "RO",
+      "field": "sequenceId",
+      "semantic_id": "field:RO.sequenceId",
+      "grain": "event",
+      "mode": "radiation_id",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "RO",
+      "field": "months_from_dx_to_tx_start",
+      "semantic_id": "field:RO.months_from_dx_to_tx_start",
+      "grain": "event",
+      "mode": "numeric_bin",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "numeric_policy": {
+        "step": "1",
+        "lower": -999,
+        "upper": 10000,
+        "within_bin": "uniform_over_permitted_grid",
+        "ambiguous_sentinel_mass": "uniform_over_permitted_grid"
+      },
+      "label_codes": {
+        "Missing": "9999"
+      },
+      "temporal": true
+    },
+    {
+      "source": "RO",
+      "field": "months_from_dx_to_treatment_end",
+      "semantic_id": "field:RO.months_from_dx_to_treatment_end",
+      "grain": "event",
+      "mode": "numeric_bin",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "numeric_policy": {
+        "step": "1",
+        "lower": -999,
+        "upper": 10000,
+        "within_bin": "uniform_over_permitted_grid",
+        "ambiguous_sentinel_mass": "uniform_over_permitted_grid"
+      },
+      "label_codes": {
+        "Missing": "9999"
+      },
+      "temporal": true
+    },
+    {
+      "source": "RO",
+      "field": "radiation_anatomic_site",
+      "semantic_id": "field:RO.radiation_anatomic_site",
+      "grain": "event",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "RO",
+      "field": "untransformed_anatomic_site",
+      "semantic_id": "field:RO.untransformed_anatomic_site",
+      "grain": "event",
+      "mode": "blank",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "reason": "No verified paired identity lookup or untransformed source text in frozen snapshot."
+    },
+    {
+      "source": "RO",
+      "field": "radiation_therapy_type",
+      "semantic_id": "field:RO.radiation_therapy_type",
+      "grain": "event",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "RO",
+      "field": "untransformed_rad_therapy_type",
+      "semantic_id": "field:RO.untransformed_rad_therapy_type",
+      "grain": "event",
+      "mode": "blank",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "reason": "No verified paired identity lookup or untransformed source text in frozen snapshot."
+    },
+    {
+      "source": "RO",
+      "field": "radiation_energy_type",
+      "semantic_id": "field:RO.radiation_energy_type",
+      "grain": "event",
+      "mode": "sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "RO",
+      "field": "untransformed_rad_energy_type",
+      "semantic_id": "field:RO.untransformed_rad_energy_type",
+      "grain": "event",
+      "mode": "blank",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "reason": "No verified paired identity lookup or untransformed source text in frozen snapshot."
+    },
+    {
+      "source": "RO",
+      "field": "radiation_dose_delivered",
+      "semantic_id": "field:RO.radiation_dose_delivered",
+      "grain": "event",
+      "mode": "numeric_bin",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "numeric_policy": {
+        "step": "0.001",
+        "lower": -999,
+        "upper": 10000,
+        "within_bin": "uniform_over_permitted_grid",
+        "ambiguous_sentinel_mass": "uniform_over_permitted_grid"
+      },
+      "label_codes": {
+        "Missing": "9999",
+        "No Doses": "0"
+      },
+      "temporal": false
+    },
+    {
+      "source": "RO",
+      "field": "radiation_fractions_delivered",
+      "semantic_id": "field:RO.radiation_fractions_delivered",
+      "grain": "event",
+      "mode": "numeric_bin",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "numeric_policy": {
+        "step": "1",
+        "lower": -999,
+        "upper": 10000,
+        "within_bin": "uniform_over_permitted_grid",
+        "ambiguous_sentinel_mass": "uniform_over_permitted_grid"
+      },
+      "label_codes": {
+        "Missing": "999"
+      },
+      "temporal": false
+    },
+    {
+      "source": "RO",
+      "field": "radiation_dose_prescribed",
+      "semantic_id": "field:RO.radiation_dose_prescribed",
+      "grain": "event",
+      "mode": "numeric_bin",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "numeric_policy": {
+        "step": "0.001",
+        "lower": -999,
+        "upper": 10000,
+        "within_bin": "uniform_over_permitted_grid",
+        "ambiguous_sentinel_mass": "uniform_over_permitted_grid"
+      },
+      "label_codes": {
+        "Missing": "999"
+      },
+      "temporal": false
+    },
+    {
+      "source": "RO",
+      "field": "radiation_fractions_prescribed",
+      "semantic_id": "field:RO.radiation_fractions_prescribed",
+      "grain": "event",
+      "mode": "numeric_bin",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero",
+      "numeric_policy": {
+        "step": "1",
+        "lower": -999,
+        "upper": 10000,
+        "within_bin": "uniform_over_permitted_grid",
+        "ambiguous_sentinel_mass": "uniform_over_permitted_grid"
+      },
+      "label_codes": {
+        "Missing": "99"
+      },
+      "temporal": false
+    },
+    {
+      "source": "CCDI",
+      "field": "nccrId",
+      "semantic_id": "field:CCDI.nccrId",
+      "grain": "resource_mapping",
+      "mode": "identity",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CCDI",
+      "field": "resourceParticipantId",
+      "semantic_id": "field:CCDI.resourceParticipantId",
+      "grain": "resource_mapping",
+      "mode": "resource_id",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    },
+    {
+      "source": "CCDI",
+      "field": "resourceName",
+      "semantic_id": "field:CCDI.resourceName",
+      "grain": "resource_mapping",
+      "mode": "catalog_sample",
+      "chart_index": 0,
+      "count_policy": "normalize_known_reported_support",
+      "unreported_support": "unknown_not_zero"
+    }
+  ]
+}
